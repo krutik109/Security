@@ -1,0 +1,36 @@
+.verifyOtpInputRow {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.input-container {
+  width: 10px;
+  height: 10px;
+}
+
+
+.inputfield {
+  max-width: 55px;
+  height: 50px;
+  padding: 18px;
+
+}
+
+.verifyBtn {
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px 5px;
+  color: white;
+  background-color: #F6F8FB;
+  border: none;
+  background-image: linear-gradient(to right, #FE512E 0%, #F09619 100%);
+}
+
+
+@media only screen and (max-width:500px) {
+  .inputfield {
+    max-width: 40px;
+    padding: 15px;
+  }
+}

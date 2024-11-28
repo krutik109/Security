@@ -1,0 +1,74 @@
+ a {
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+   font-size: 17px;
+ }
+
+
+ .sidebar_link {
+   padding-top: 12px;
+ }
+
+ .dropdown_icon {
+   font-size: 23px;
+   color: black;
+   font-weight: 600;
+ }
+
+ .financial_management_main:hover .dropdown_icon {
+   color: white;
+ }
+
+ .sidebar_link:hover {
+   background-image: linear-gradient(90deg, #FE512E 0%, #F09619 100%);
+   padding-top: 12px;
+   border-radius: 10px;
+ }
+
+ .sidebar_link:hover a {
+   color: white;
+ }
+
+ .financial_management_main:hover p {
+   color: white;
+ }
+
+
+
+ .sidebar_link:hover .font_color {
+   color: white;
+ }
+
+ .font_color {
+   color: dimgray;
+
+ }
+
+ .font_color:hover {
+   color: white;
+ }
+
+ .active-link {
+   background-color: #f0f0f0;
+   /* Adjust this to your desired background color */
+   color: #333;
+   /* Adjust text color if needed */
+ }
+
+ .active-gradient {
+   background: linear-gradient(90deg, rgba(255, 94, 0, 1) 0%, rgba(255, 154, 0, 1) 100%);
+   color: #fff;
+ }
+
+ .dropdown-main {
+   margin-left: 15px;
+ }
+
+
+
+ @media only screen and (min-width:768px) and (max-width:1050px) {
+   a p {
+     font-size: 14px;
+   }
+ }

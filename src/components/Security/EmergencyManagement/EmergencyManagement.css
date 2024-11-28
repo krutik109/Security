@@ -1,0 +1,126 @@
+
+.card {
+    margin-bottom: 180px;
+    right: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  textarea::placeholder {
+    color: #b0b0b0;
+    font-style: italic;
+  }
+/* Dropdown container */
+.dropdown-container {
+    position: relative;
+    margin: 0 auto;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Dropdown Header */
+  .dropdown-header {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .dropdown-header.open {
+    border-color: #333;
+  }
+  
+  /* Arrow Styling */
+  .arrow {
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .arrow.up {
+    transform: rotate(-135deg);
+  }
+  
+  /* Options Container */
+  .dropdown-options {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow-y: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .dropdown-options.dropdown-open {
+    max-height: 150px; /* Adjust to desired height */
+    opacity: 1;
+    visibility: visible;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .dropdown-options.dropdown-close {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* Option Items */
+  .dropdown-option {
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .dropdown-option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown-option.selected {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  /* Custom Scrollbar Styling */
+  .dropdown-options::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .dropdown-options::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .dropdown-options::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 8px;
+  }
+  
+  .dropdown-options::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
+  
+  /* Modern Scrollbar */
+  .dropdown-options {
+    scrollbar-color: #ccc #f0f0f0;
+    scrollbar-width: thin;
+  }
+  

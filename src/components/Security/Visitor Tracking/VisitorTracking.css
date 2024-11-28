@@ -1,0 +1,44 @@
+.visitor-tracking-container {
+    min-height: 100vh;
+}
+.select-week{
+    width: 100px;
+}
+
+.btn-primary {
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+.btn-primary:hover {
+    background-color: #003899;
+    border-color: #003899;
+}
+
+.table-light th {
+    background-color: #eef4fc;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table-hover tbody td {
+    text-align: center;
+    font-size: 14px;
+}
+
+.d-flex img {
+    object-fit: cover;
+}
+
+.scrollable {
+    max-height: 400px; /* Adjust based on desired height */
+    overflow-y: auto;
+}
+.status.open {
+    background-color: #f0f4ff; /* Light blue background */
+    color: #6c83f7;
+  }
+  .status.time {
+    background-color: #f0f4ff; /* Light blue background */
+    color: #000000;
+  }

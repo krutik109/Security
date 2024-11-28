@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.mainColor2{
+  
+  border-radius: 10px;
+  font-weight: 500;
+  color: #070202;
+  background: linear-gradient(90deg, #FE512E 0%, #F09619 100%);
+}
+.cancelbtn{
+  border-radius: 10px;
+  width: 141px;
+  color: #000;
+  font-size: 18px;
+  height: 41px;
+}
+.createbtn{
+  width: 141px;
+  color: #000;
+  font-size: 18px;
+  height: 41px;
+  border-radius: 10px;
+}

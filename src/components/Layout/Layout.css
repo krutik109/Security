@@ -1,0 +1,82 @@
+.sidebar_height {
+  height: auto;
+}
+
+.input-width {
+  width: 100%;
+  padding: 6px;
+}
+
+.main-background {
+  background-color: #5678e91b;
+}
+
+.sidebar {
+  background-color: white;
+  z-index: 999;
+}
+
+.main-content {
+  z-index: 1;
+}
+
+/* Sidebar styling for screens with max-width 992px */
+@media (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.d-block {
+    transform: translateX(0);
+  }
+
+  /* Close button styling */
+  .close-btn {
+    font-size: 1.5rem;
+    color: #333;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+  }
+
+  /* Overlay styling */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 999;
+  }
+
+  /* Main content full width on screens up to 767px when sidebar is hidden */
+  .main-content {
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+
+@media only screen and (min-width:1100px) {
+  .sidebar_height {
+    height: 110vh;
+  }
+
+}
+
+@media only screen and (min-width:1300px) {
+  .sidebar_height {
+    height: 100vh;
+  }
+
+}
